@@ -1,0 +1,9 @@
+<resources>
+    <string name="parse_app_id">KorsaApp</string>
+    <string name="parse_client_key">KSJFKKJ3K4JK3J4K3JUWE89ISDJHFSJDFS</string>
+    <string name="app_name">Korsa</string>
+    <string name="rider">Rider</string>
+    <string name="driver">Driver</string>
+    <string name="get_started">Get Started</string>
+    <string name="title_activity_your_location">Map</string>
+</resources>
