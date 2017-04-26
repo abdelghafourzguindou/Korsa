@@ -1,6 +1,7 @@
 package com.project.korsa.korsa;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Criteria;
 import android.location.Location;
@@ -31,7 +32,9 @@ public class ViewRequests extends AppCompatActivity implements LocationListener 
 
     ListView listView;
     ArrayList<String> listViewContent;
-    ArrayList<ParseObject> requests;
+    ArrayList<String> usernames;
+    ArrayList<Double> latitudes;
+    ArrayList<Double> longitudes;
     ArrayAdapter arrayAdapter;
 
     Location location;
@@ -45,6 +48,9 @@ public class ViewRequests extends AppCompatActivity implements LocationListener 
 
         listView = (ListView) findViewById(R.id.listView);
         listViewContent = new ArrayList<String>();
+        usernames = new ArrayList<String>();
+        latitudes = new ArrayList<Double>();
+        longitudes = new ArrayList<Double>();
 
         listViewContent.add("Finding nearby requests...");
 
@@ -72,7 +78,13 @@ public class ViewRequests extends AppCompatActivity implements LocationListener 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                Intent i = new Intent(getApplicationContext(), ViewRiderLocation.class);
+                i.putExtra("username", usernames.get(position));
+                i.putExtra("latitude", latitudes.get(position));
+                i.putExtra("longitude", longitudes.get(position));
+                i.putExtra("userLatitude", location.getLatitude());
+                i.putExtra("userLongitude", location.getLongitude());
+                startActivity(i);
             }
         });
     }
@@ -102,6 +114,10 @@ public class ViewRequests extends AppCompatActivity implements LocationListener 
                                 Double distanceOneDP = (double) Math.round(distanceInMiles * 10) / 10;
                                 listViewContent.add(/*String.valueOf(object.get("requesterUsername")) +" In "+*/
                                         distanceOneDP.toString() + " miles");
+
+                                usernames.add(object.getString("requesterUsername"));
+                                latitudes.add(object.getParseGeoPoint("requesterLocation").getLatitude());
+                                longitudes.add(object.getParseGeoPoint("requesterLocation").getLongitude());
                             }
                         }
                     }

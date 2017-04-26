@@ -6,4 +6,5 @@
     <string name="driver">Driver</string>
     <string name="get_started">Get Started</string>
     <string name="title_activity_your_location">Map</string>
+    <string name="title_activity_view_rider_location">View Rider Location</string>
 </resources>
