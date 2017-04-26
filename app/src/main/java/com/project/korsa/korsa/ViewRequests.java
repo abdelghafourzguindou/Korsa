@@ -98,9 +98,10 @@ public class ViewRequests extends AppCompatActivity implements LocationListener 
                         listViewContent.clear();
                         for(ParseObject object : objects) {
                             if(object.get("driverUsername") == null) {
-                                //listViewContent.add(String.valueOf(object.get("requesterUsername")));
-                                Double distanceInMiles = userLocation.distanceInMilesTo((ParseGeoPoint) object.get("requesterUsername"));
-                                listViewContent.add(String.valueOf(String.format("%.1g%n", distanceInMiles)) + " miles");
+                                Double distanceInMiles = userLocation.distanceInMilesTo((ParseGeoPoint) object.get("requesterLocation"));
+                                Double distanceOneDP = (double) Math.round(distanceInMiles * 10) / 10;
+                                listViewContent.add(/*String.valueOf(object.get("requesterUsername")) +" In "+*/
+                                        distanceOneDP.toString() + " miles");
                             }
                         }
                     }

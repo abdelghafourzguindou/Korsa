@@ -3,102 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-10.0.1_739aa1eff903d4376d911565c7c789cc06c735ec/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.firebase/firebase-appindexing/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ae80d328a8548b4610ead6c624bab8c6a6984f5b">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-appindexing-10.0.1_54ded1622d3ee3bac6f465105a884630b1c1c73f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.1_e47407de64b67348b9f9c5c9b575656e53bfd46f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="de29a39f9260f88151b1ef453140e71c76b6c415">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-10.0.1_c6ccf2d6078715be98bd9b4a7aa2f1acffc61dad/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e871881b36b32e6bfd271a830c6eeb54ff0fc185">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-10.0.1_cdf38f037541c4a10b997c903ae75ec9616e8b1b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.1_e13ce3bf7fe093997e6f50d21a34eb378a697972/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="92c871a22463a247e8a77a9f3fd231c278788c4a">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-10.0.1_c28567bce80e838a25e47972bce63a7561522768/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="ba2f029ff37297295d2d197ac6e957b361bfccaf">
         <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.6.0_f3d1d1a9fa0cadca6505e918c95fedd10d39ca0a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7a64bf6dc775198eed9db9468a133adf7dfe6562">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-10.0.1_f06d30199f84aae18779976faf8493416e6e99a9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ba6aa5e69ef31dee57208125323cee958fc67565">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-10.0.1_17e5ae22ff5b78bb6fba94be39bc0fd98b8f48b2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-10.0.1_47d66503b912d8330489eda9db13adb2d5114d3e/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -116,7 +26,7 @@
         optimize="true"
         revision="25.0.2"
         sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.6.0_b1645ad7feec9c5e5c37fd659dd352bf5ab8b8c4/classes.dex" />
+        <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.6.0_b1645ad7feec9c5e5c37fd659dd352bf5ab8b8c4/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -135,15 +45,6 @@
         revision="25.0.2"
         sha1="d1e7862a5a7675940acb6efcab34b38de89c9e18">
         <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-9.6.0_027b9378bb736b1fd7dbd18c472da6e09ace14bc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="771267c5b0c7a5b348d3205dcfa1f871af7e0177">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-10.0.1_d3dec61fa40150775d0e856b75f7040373012095/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -171,15 +72,6 @@
         revision="25.0.2"
         sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
         <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.1_014921d6f1be14f27dc0abdeea7931a1072ec362/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6bb5d347ebc0c6ef3c83a905222a688da5d2f7b4">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-10.0.1_8e52fa77e9cf58925deff523829c7ccaa24f3939/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -228,15 +120,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="39907d5c8f5902fffef30160ca7447c93b82405c">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-10.0.1_064db2bbdc0676adcbef62ffcd46bf73a805598b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -268,26 +151,8 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="f77ec74e4e3e3a8ab94d241309f29ea455b335ad">
+        sha1="849511a29e95b68dc8f8fe8a65cae1ca301ac164">
         <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b53d1e0b9b627da84f3e400bddd988d12130a174/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.1_33aad64308ae0facdbc6d812cecf1368e2e633e3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-10.0.1_002752ce70a6cb208d3e99b5d61bcf9df866b73b/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -300,30 +165,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="028f8255cb977b29cdffbfcf05caa0459686120c">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-10.0.1_702c86e1957b580836e58389f55189e83294ef5e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="d39f676be8400123523882d189a1d84040d34339">
         <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.6.0_ce115c737c1114f49e2521f952c0e8fa2bed7da9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1e11c68fec92a17c84dd8d1dd80e74c4e67b12e2">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-10.0.1_590947726fc9ff82a10b0e757ab029a957213528/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -342,15 +189,6 @@
         revision="25.0.2"
         sha1="eb96a230c7b55d545fbdee45157a5a75b2b26284">
         <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-9.6.0_7523a8a6bba23b06dd71fb67a955e6662ae1fafa/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_d4855405e5ed009d3bfd108baeaa09feff285ae5/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -386,16 +224,7 @@
         optimize="true"
         revision="25.0.2"
         sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.11.0_304450cf79fcc8319f39593cf55662ae4a824eef/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8308ed003522a2ee8958311afcc4cfd0470377cd">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-10.0.1_593630e81d0884966cacb3df8d2339f957f66570/classes.dex" />
+        <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.11.0_304450cf79fcc8319f39593cf55662ae4a824eef/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -426,30 +255,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="971509bbe30bb7b971fc1c49d7b23d0d818830ac">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-10.0.1_6741e7f6053a875d2d35052cf5cc976b76570be1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/zguindouos/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.1_1ac16d8b8264ba1850288a401cfb8c22102c4f59/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-10.0.1_450193c020e86fe5aaf41ad992e03501342543a4/classes.dex" />
+        <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.1_1ac16d8b8264ba1850288a401cfb8c22102c4f59/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -459,24 +270,6 @@
         revision="25.0.2"
         sha1="7a343e17f154f513a09c12946fae0f172be079ec">
         <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.6.0_40ad269ae671d9841f83ed813f19a6a31e3d7a3a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e2185aff89caeb337b1ffc36d5e525d8318e7cfe">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-10.0.1_01c0a97c9edb1d22f6089232879b762817791e88/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f6cf557be4dbd0282ea2388633e5378634423226">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-10.0.1_5675486c1938aa8af4716873855c0c73160e0a8c/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -493,7 +286,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="8533c6c593d660ff47c1db76888d60f199df8151">
+        sha1="4dc84b8fb21137571b50a905f431ab4a8c51f24f">
         <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_11580ee604051ee15a348df499fdd4feb4636869/classes.dex" />
     </item>
     <item
@@ -507,57 +300,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-10.0.1_d7c3f9722836ffea472e17dd795f25a7d0b50586/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4385ccc0a88b33d182a836eadb47be55c8eb1107">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-awareness-10.0.1_3a6153ab9e77d0425717e29aba7fffc3297054b9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
         <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.1_adecc0472be128ff8c87178a3b368cba6ee2389a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.1_3ad2b5368be62738a437d79f26e4c1a87f036d68/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.1_20e0e63294951833a950ca95bf4724440fdfc041/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.1_11eb21c8aab1e0cd1ca8abcf97d3db21378b06bb/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -588,48 +336,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-10.0.1_0660521534b475b29d21bd0072b8b1b3590ab4d6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
         <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.1_68a84c0a40ec33dcc7f16d7e1d8faf29fbf8b058/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-10.0.1_3c8d0c5d0f29c641e0a702d9ed8a65d4ef960995/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-10.0.1_210c6d8c34c187e04a1525f00b9900fa3ff3a0c3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-10.0.1_00929c5a75cc6834d10fa1d59c8e752471e182f6/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -678,15 +390,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a48dc0b148059764d32500be558702d5ff932058">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-10.0.1_daba23a8003234c485f8d978c9fb01e97c731e34/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -732,30 +435,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1d193729baf37df3d902a423291423a0df7e3779">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-10.0.1_789d3e6bc9ef0e276bceb750a7a79c7cdcdd11cb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="5fef4ad8c5b2519596b80a241d56b69dffcd6845">
         <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-9.6.0_13c365aaf22bd06de2b1639d8ca9686b7fd95ddc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4c829ff0ccfecb28a999ee46d9e75948dfc777a4">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-10.0.1_56e3ee2ed963fa6a02a295af1ea488e48186826b/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -777,24 +462,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-10.0.1_24034ec2f617ca9b961d22b45f2f4f6aee6a2533/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b1df8fa3d372a27e4e969ce00b00689ee1eed031">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-10.0.1_4cd9f74ec358dfb8c092f081e79448f047fd1220/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -804,75 +471,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e96c6974cf924e7ee3b230e6847d5731423388c9">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-10.0.1_dec8aff65e2936d600cded2673604a7ae43aff3d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-10.0.1_3e2667cff0feae366d1e36623023d3e9dcbdab84/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-10.0.1_e76473e1f47eade2b11f95fcff61db3027380f76/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-10.0.1_294a3879811d4a04d595497850bcbcca158dee5f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/zguindouos/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_984825e5ae9525592c975ece6dcb68ef754cc1bc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-10.0.1_b35420c4a11bf54375a1551e65d5d9b474cf2249/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c6e1f361e9d61aece9dac39b77fcc98a337a144d">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-10.0.1_4cdf530fdb99cefb221b5f14a88e41f48b1ae034/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c14f0c89f28cf782e42581ab0aba5f63af39b3d2">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-10.0.1_1a8f342a810027f28e3afd39cc8575f459e0be78/classes.dex" />
+        <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_984825e5ae9525592c975ece6dcb68ef754cc1bc/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -894,24 +498,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-10.0.1_ca5af87644baff9c56a4418d3b38162de25be009/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.1_6a9b52a05b43cfd634aec7c5cde0b1af442c27e0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -930,15 +516,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="45305e6af414dab5aba6c3225081c2f15c3bdd1e">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-10.0.1_a96dfd62aa3610b13c341a7a3a0bc476dbe6bfd1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -948,39 +525,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.1_39f3b00100eb2b4f333a6dd698bc3d4d96ba3797/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="a917154cf730ea6ec2495705309e6a4065cde2ac">
         <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-9.6.0_99675762c44d1c87dd5856f82731132c60a3b6b8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-10.0.1_5a9ca74e4a35bcca60adae911d1aee169174292a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-10.0.1_9481a68ff5434bec40413e55aebe07b8637bfc04/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -1011,39 +561,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2d5d113b0352ab60946fc44c518cf68fd26cbb79">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-10.0.1_d45494c315ac240e45b2470600de39f81b0ed5c4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/libs/parse-android-1.14.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b35bb849e7bda4497fe6dfce4bd9f332087c2e3b">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/2/parse-android-1.14.1_fb600ab54dbd1e59eb86789a7bfbe7c408c8f33a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="73699fb64ea3de4a43d0f5c37dc525a5e1341ca1">
         <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-9.6.0_02bf662aa644f8bb4cb236db6412e144e5a22c5e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_a249b62d461ae7fe7427dbd514abc88f35e51302/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -1056,39 +579,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4f0a18c549ed4ac81e9e107fe48241576c530b14">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_01386e255a984128a799a3ec9eea0a80628431e1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/zguindouos/AndroidStudioProjects/Korsa/app/libs/parse-android-1.14.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="b35bb849e7bda4497fe6dfce4bd9f332087c2e3b">
         <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/2/parse-android-1.14.1_a61296ed907a1258be2376f0c6e616097b75a426/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.1_df5b140ad1fd1411c9d61604e89a1fcc30384d85/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="dd39827d2067497e60e21da48a7926000b6d4b0c">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-10.0.1_c8bf4a58d74fbfe02eb986d473a55508a17a2444/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -1101,33 +597,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-24.0.0_67adfc1ff6cad14067f2a0b11fa888a815057aa1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-v4-impl/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f23ad0f8e58713ff4b55f61c0bbde3830378347c">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-v4-impl-10.0.1_999290998291a9769805a5682fd868052d29b83a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="44a694d4095be84c2888764b1f7256b385c030ad">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-10.0.1_8ac84059298d2777ea5b15c6fc10b474f00de36c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -1137,48 +606,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="df1cb17511aabbb63264a0024949d1e42502a512">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-10.0.1_58ab4ce038b00b2a6971882b9f876615e468ca80/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.6.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="5e651c1430cc9b8a3b3b5a9d92bb173214dfdf42">
         <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.6.0_59c330c479dc53428af3bd2ec98aa3f017e8e1dd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-10.0.1_9bef19217c3086fcbb5d17b7f32c6e0240253630/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="408a599ac77cd17fe8e8919326bec617b3d005bd">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-10.0.1_b3149cba8d90ac358f7051fedcc3e98a43571e7b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zguindouos/Desktop/Korsa/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="afea6398540ffb9172fa910032631266682b3d68">
-        <dex dex="/home/zguindouos/Desktop/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7979f88037ba7b41411bfd7298a3e1f7aaaf48ef/classes.dex" />
     </item>
 
 </items>
