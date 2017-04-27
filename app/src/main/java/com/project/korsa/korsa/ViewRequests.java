@@ -72,7 +72,7 @@ public class ViewRequests extends AppCompatActivity implements LocationListener 
         location = locationManager.getLastKnownLocation(provider);
 
         if (location != null) {
-            updateLocation(location);
+            updateLocation();
         }
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -89,7 +89,7 @@ public class ViewRequests extends AppCompatActivity implements LocationListener 
         });
     }
 
-    public void updateLocation(Location location) {
+    public void updateLocation() {
 
         final ParseGeoPoint userLocation = new ParseGeoPoint(location.getLatitude(), location.getLongitude());
 
@@ -130,7 +130,8 @@ public class ViewRequests extends AppCompatActivity implements LocationListener 
 
     @Override
     public void onLocationChanged(Location location) {
-        updateLocation(location);
+        updateLocation();
+
     }
 
     @Override
