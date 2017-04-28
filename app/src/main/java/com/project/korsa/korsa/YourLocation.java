@@ -6,6 +6,7 @@ import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.os.Handler;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -15,11 +16,15 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.parse.FindCallback;
 import com.parse.ParseACL;
@@ -30,6 +35,7 @@ import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class YourLocation extends FragmentActivity implements OnMapReadyCallback, LocationListener {
@@ -40,13 +46,13 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
 
     LocationManager locationManager;
     String provider;
-
     TextView infoTextView;
     Button requestKorsaButton;
-
     Boolean requestActive = false;
-
     Location location;
+    String driverUsername = "";
+    ParseGeoPoint driverLocation = new ParseGeoPoint(0,0);
+    Handler handler = new Handler();
 
     public void requestKorsa(View view) {
 
@@ -152,12 +158,145 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
-    public void updateLocation(Location location) {
+    public void updateLocation(final Location location) {
 
-        mMap.addMarker(new MarkerOptions().position(new LatLng(location.getLatitude(), location.getLongitude())).title("Your Location"));
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 10));
+        mMap.clear();
 
-        setLocation(location);
+        if (!requestActive) {
+            ParseQuery<ParseObject> query = ParseQuery.getQuery("Requests");
+            query.whereEqualTo("requesterUsername", ParseUser.getCurrentUser().getUsername());
+            query.findInBackground(new FindCallback<ParseObject>() {
+                @Override
+                public void done(List<ParseObject> objects, ParseException e) {
+                    if (e == null) {
+                        if (objects.size() > 0) {
+                            for (ParseObject object : objects) {
+
+                                requestActive = true;
+                                infoTextView.setText("Finding Korsa driver...");
+                                requestKorsaButton.setText("Cancel Korsa");
+
+                                if (object.get("driverUsername") != null) {
+
+                                    driverUsername = object.getString("driverUsername");
+                                    infoTextView.setText("Your driver is on their way!");
+                                    requestKorsaButton.setVisibility(View.INVISIBLE);
+
+                                    Log.i("AppInfo", driverUsername);
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+
+        }
+
+        if (driverUsername.equals("")) {
+
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 10));
+            mMap.addMarker(new MarkerOptions().position(new LatLng(location.getLatitude(), location.getLongitude())).title("Your Location"));
+
+        }
+
+        if (requestActive) {
+
+            if (!driverUsername.equals("")) {
+
+                ParseQuery<ParseUser> userQuery = ParseUser.getQuery();
+                userQuery.whereEqualTo("username", driverUsername);
+                userQuery.findInBackground(new FindCallback<ParseUser>() {
+                    @Override
+                    public void done(List<ParseUser> objects, ParseException e) {
+                        if (e == null) {
+
+                            if (objects.size() > 0) {
+
+                                for (ParseUser driver : objects) {
+
+                                    driverLocation = driver.getParseGeoPoint("location");
+
+                                }
+                            }
+                        }
+                    }
+                });
+
+                if (driverLocation.getLatitude() != 0 && driverLocation.getLongitude() != 0) {
+
+                    Log.i("AppInfo", driverLocation.toString());
+
+                    Double distanceInMiles = driverLocation.distanceInMilesTo(new ParseGeoPoint(location.getLatitude(), location.getLongitude()));
+
+                    Double distanceOneDP = (double) Math.round(distanceInMiles * 10) / 10;
+
+                    infoTextView.setText("Your driver is " + distanceOneDP.toString() + " miles away ");
+
+                    LatLngBounds.Builder builder = new LatLngBounds.Builder();
+
+                    ArrayList<Marker> markers = new ArrayList<Marker>();
+
+                    markers.add(mMap.addMarker(new MarkerOptions().position(new LatLng(driverLocation.getLatitude(), driverLocation.getLongitude())).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)).title("Driver Location")));
+                    markers.add(mMap.addMarker(new MarkerOptions().position(new LatLng(location.getLatitude(), location.getLongitude())).title("Your Location")));
+
+                    for (Marker marker : markers) {
+                        builder.include(marker.getPosition());
+                    }
+
+                    LatLngBounds bounds = builder.build();
+
+                    int padding = 100;
+                    CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds, padding);
+
+                    mMap.animateCamera(cu);
+                }
+
+            }
+
+
+            final ParseGeoPoint userLocation = new ParseGeoPoint(location.getLatitude(), location.getLongitude());
+
+            ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("Requests");
+
+            query.whereEqualTo("requesterUsername", ParseUser.getCurrentUser().getUsername());
+
+            query.findInBackground(new FindCallback<ParseObject>() {
+                @Override
+                public void done(List<ParseObject> objects, ParseException e) {
+
+                    if (e == null) {
+
+                        if (objects.size() > 0) {
+
+                            for (ParseObject object : objects) {
+
+                                object.put("requesterLocation", userLocation);
+                                object.saveInBackground();
+
+                            }
+
+
+                        }
+
+                    }
+
+                }
+            });
+
+
+
+
+        }
+
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                updateLocation(location);
+            }
+        }, 5000);
+
+
     }
 
     /**
@@ -186,7 +325,6 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
             updateLocation(location);
         }
 
-        //mMap.getUiSettings().setMyLocationButtonEnabled(true);
         //mMap.setMyLocationEnabled(true);
 
     }

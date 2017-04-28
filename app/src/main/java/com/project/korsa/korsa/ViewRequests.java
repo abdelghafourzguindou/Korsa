@@ -23,6 +23,7 @@ import com.parse.ParseException;
 import com.parse.ParseGeoPoint;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
+import com.parse.ParseUser;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -97,6 +98,9 @@ public class ViewRequests extends AppCompatActivity implements LocationListener 
 
         final ParseGeoPoint userLocation = new ParseGeoPoint(location.getLatitude(), location.getLongitude());
 
+        ParseUser.getCurrentUser().put("location", userLocation);
+        ParseUser.getCurrentUser().saveInBackground();
+
         ParseQuery<ParseObject> query = ParseQuery.getQuery("Requests");
 
         query.whereNear("requesterLocation", userLocation);
@@ -116,7 +120,7 @@ public class ViewRequests extends AppCompatActivity implements LocationListener 
                             if(object.get("driverUsername") == null) {
                                 Double distanceInMiles = userLocation.distanceInMilesTo((ParseGeoPoint) object.get("requesterLocation"));
                                 Double distanceOneDP = (double) Math.round(distanceInMiles * 10) / 10;
-                                listViewContent.add(/*String.valueOf(object.get("requesterUsername")) +" In "+*/
+                                listViewContent.add(String.valueOf(object.get("requesterUsername")) +" In "+
                                         distanceOneDP.toString() + " miles");
 
                                 usernames.add(object.getString("requesterUsername"));
@@ -135,6 +139,19 @@ public class ViewRequests extends AppCompatActivity implements LocationListener 
     @Override
     public void onLocationChanged(Location location) {
         updateLocation();
+
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        /*if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(
+                    this,
+                    new String[]{android.Manifest.permission.ACCESS_COARSE_LOCATION, android.Manifest.permission.ACCESS_FINE_LOCATION},
+                    PERMISSION_LOCATION_REQUEST_CODE);
+        }
+        locationManager.removeUpdates(this);*/
 
     }
 
