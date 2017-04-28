@@ -16,6 +16,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import android.location.LocationListener;
+import android.widget.Toast;
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -58,7 +59,10 @@ public class ViewRequests extends AppCompatActivity implements LocationListener 
         listView.setAdapter(arrayAdapter);
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        provider = locationManager.getBestProvider(new Criteria(), false);
+        provider = locationManager.getBestProvider(new Criteria(), true);
+        if(provider == null) {
+            Toast.makeText(this, "No Location for you", Toast.LENGTH_SHORT).show();
+        }
 
 
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -103,7 +107,7 @@ public class ViewRequests extends AppCompatActivity implements LocationListener 
 
                 if (e == null) {
 
-                    Log.i("MyApp", objects.toString());
+                    //Log.i("MyApp", objects.toString());
 
                     if (objects.size() > 0) {
 

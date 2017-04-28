@@ -46,6 +46,8 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
 
     Boolean requestActive = false;
 
+    Location location;
+
     public void requestKorsa(View view) {
 
         if (!requestActive) {
@@ -71,6 +73,7 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
                         infoTextView.setText("Finding Korsa driver...");
                         requestKorsaButton.setText("Cancel Korsa");
                         requestActive = true;
+                        setLocation(location);
 
                     }
                     else infoTextView.setText("Error...");
@@ -92,7 +95,6 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
                     if (e == null) {
                         if (objects.size() > 0) {
                             for (ParseObject object : objects) {
-
                                 object.deleteInBackground();
                             }
                         }
@@ -115,7 +117,10 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
         requestKorsaButton = (Button) findViewById(R.id.requestKorsa);
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        provider = locationManager.getBestProvider(new Criteria(), false);
+        provider = locationManager.getBestProvider(new Criteria(), true);
+        if(provider == null) {
+            Toast.makeText(this, "No Location for you", Toast.LENGTH_SHORT).show();
+        }
 
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(
@@ -126,39 +131,33 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
         locationManager.requestLocationUpdates(provider, 400, 1, this);
     }
 
-    public void updateLocation(Location location) {
-
-        mMap.addMarker(new MarkerOptions().position(new LatLng(location.getLatitude(), location.getLongitude())).title("Your Location"));
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 10));
-
+    private void setLocation(Location location) {
         if (requestActive) {
-
             final ParseGeoPoint userLocation = new ParseGeoPoint(location.getLatitude(), location.getLongitude());
-
             ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("Requests");
-
             query.whereEqualTo("requesterUsername", ParseUser.getCurrentUser().getUsername());
-
             query.findInBackground(new FindCallback<ParseObject>() {
                 @Override
                 public void done(List<ParseObject> objects, ParseException e) {
-
                     if (e == null) {
-
                         if (objects.size() > 0) {
-
                             for (ParseObject object : objects) {
-
                                 object.put("requesterLocation", userLocation);
                                 object.saveInBackground();
-
                             }
-
                         }
                     }
                 }
             });
         }
+    }
+
+    public void updateLocation(Location location) {
+
+        mMap.addMarker(new MarkerOptions().position(new LatLng(location.getLatitude(), location.getLongitude())).title("Your Location"));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 10));
+
+        setLocation(location);
     }
 
     /**
@@ -181,12 +180,14 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
                     new String[]{android.Manifest.permission.ACCESS_COARSE_LOCATION, android.Manifest.permission.ACCESS_FINE_LOCATION},
                     PERMISSION_LOCATION_REQUEST_CODE);
         }
-        mMap.setMyLocationEnabled(true);
 
-        Location location = locationManager.getLastKnownLocation(provider);
+        location = locationManager.getLastKnownLocation(provider);
         if (location != null) {
             updateLocation(location);
         }
+
+        //mMap.getUiSettings().setMyLocationButtonEnabled(true);
+        //mMap.setMyLocationEnabled(true);
 
     }
 
