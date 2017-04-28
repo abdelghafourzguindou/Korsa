@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
         ParseAnalytics.trackAppOpenedInBackground(getIntent());
 
-        getSupportActionBar().hide();
+        //getSupportActionBar().hide();
 
         if (ParseUser.getCurrentUser() == null) {
 

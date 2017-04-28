@@ -189,18 +189,18 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
                     }
                 }
             });
-
-
         }
 
         if (driverUsername.equals("")) {
 
-            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 10));
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 15));
             mMap.addMarker(new MarkerOptions().position(new LatLng(location.getLatitude(), location.getLongitude())).title("Your Location"));
 
         }
 
         if (requestActive) {
+
+            requestActive = false;
 
             if (!driverUsername.equals("")) {
 
@@ -251,7 +251,6 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
 
                     mMap.animateCamera(cu);
                 }
-
             }
 
 
@@ -273,20 +272,11 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
 
                                 object.put("requesterLocation", userLocation);
                                 object.saveInBackground();
-
                             }
-
-
                         }
-
                     }
-
                 }
             });
-
-
-
-
         }
 
         handler.postDelayed(new Runnable() {
@@ -294,8 +284,7 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
             public void run() {
                 updateLocation(location);
             }
-        }, 5000);
-
+        }, 1000);
 
     }
 

@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
+import android.os.Handler;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -42,6 +43,9 @@ public class ViewRequests extends AppCompatActivity implements LocationListener 
     Location location;
     LocationManager locationManager;
     String provider;
+
+    Handler handler = new Handler();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -120,7 +124,7 @@ public class ViewRequests extends AppCompatActivity implements LocationListener 
                             if(object.get("driverUsername") == null) {
                                 Double distanceInMiles = userLocation.distanceInMilesTo((ParseGeoPoint) object.get("requesterLocation"));
                                 Double distanceOneDP = (double) Math.round(distanceInMiles * 10) / 10;
-                                listViewContent.add(String.valueOf(object.get("requesterUsername")) +" In "+
+                                listViewContent.add(/*String.valueOf(object.get("requesterUsername")) +" In "+*/
                                         distanceOneDP.toString() + " miles");
 
                                 usernames.add(object.getString("requesterUsername"));

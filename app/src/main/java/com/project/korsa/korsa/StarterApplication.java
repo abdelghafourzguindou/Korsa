@@ -22,9 +22,9 @@ public class StarterApplication extends Application {
                 .applicationId("KorsaApp")
                 .clientKey(null)
                 //.server("http://192.168.43.34:1337/parse/")   //Without proxy
-                //.server("http://10.23.21.222:1337/parse/")    //With proxy
+                .server("http://10.23.21.222:1337/parse/")    //With proxy
                 //.server("http://localhost:1337/parse/")       //Localhost unused
-                .server("http://10.0.2.2:1337/parse/")        //Localhost for emulator
+                //.server("http://10.0.2.2:1337/parse/")        //Localhost for emulator
                 .build());
         //Parse.initialize(this);
  
