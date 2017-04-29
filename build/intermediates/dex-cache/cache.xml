@@ -340,7 +340,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="ea987e5bea0a1a48f57cdd0ce76446abe804d82f">
+        sha1="ee2b6206514e3e6cf4391eaceb3758aa222a26f8">
         <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b53d1e0b9b627da84f3e400bddd988d12130a174/classes.dex" />
     </item>
     <item
@@ -574,7 +574,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="d2d8f091ae88fd4c64b3d725d8f058726943b100">
+        sha1="f40b7b1f4971747cb790507beb6a37554a10a0f4">
         <dex dex="/home/zguindouos/AndroidStudioProjects/Korsa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_11580ee604051ee15a348df499fdd4feb4636869/classes.dex" />
     </item>
     <item

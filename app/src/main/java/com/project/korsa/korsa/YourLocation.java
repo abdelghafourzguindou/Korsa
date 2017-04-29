@@ -1,6 +1,9 @@
 package com.project.korsa.korsa;
 
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Criteria;
 import android.location.Location;
@@ -10,6 +13,7 @@ import android.os.Handler;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v7.app.NotificationCompat;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -49,10 +53,32 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
     TextView infoTextView;
     Button requestKorsaButton;
     Boolean requestActive = false;
+    Boolean notifyIsLunched = false;
     Location location;
     String driverUsername = "";
     ParseGeoPoint driverLocation = new ParseGeoPoint(0,0);
     Handler handler = new Handler();
+
+    NotificationCompat.Builder notification;
+    private static final int uniqueID = 54612;
+
+    public void notifyRider() {
+        //Build the notifications
+        notification.setSmallIcon(R.mipmap.unnamed);
+        notification.setTicker("This is the ticker");
+        notification.setWhen(System.currentTimeMillis());
+        notification.setContentTitle("Korsa Notification");
+        notification.setContentTitle("Your driver is on their way!");
+
+        Intent intent = new Intent(this, YourLocation.class);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        notification.setContentIntent(pendingIntent);
+
+        //Builds notification and issues it
+        NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        nm.notify(uniqueID, notification.build());
+    }
 
     public void requestKorsa(View view) {
 
@@ -135,6 +161,9 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
                     PERMISSION_LOCATION_REQUEST_CODE);
         }
         locationManager.requestLocationUpdates(provider, 400, 1, this);
+
+        notification = new NotificationCompat.Builder(this);
+        notification.setAutoCancel(true);
     }
 
     private void setLocation(Location location) {
@@ -182,7 +211,11 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
                                     infoTextView.setText("Your driver is on their way!");
                                     requestKorsaButton.setVisibility(View.INVISIBLE);
 
-                                    Log.i("AppInfo", driverUsername);
+                                    notifyRider();
+
+                                    notifyIsLunched = true;
+
+                                    //Log.i("AppInfo", driverUsername);
                                 }
                             }
                         }
@@ -200,7 +233,7 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
 
         if (requestActive) {
 
-            requestActive = false;
+            if(!notifyIsLunched) requestActive = false;
 
             if (!driverUsername.equals("")) {
 

@@ -12,10 +12,10 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
         android:src="@mipmap/unnamed"
         android:layout_gravity="center|top"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="5dp"
         />
 
     <LinearLayout
@@ -26,29 +26,51 @@
         >
 
         <TextView
-            android:text="@string/driver"
+            android:text="@string/rider"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
             tools:textSize="18sp"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:textColor="@color/cast_expanded_controller_background_color" />
 
         <Switch
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/riderOrDriverSwitch"
             tools:ignore="HardcodedText"
-            android:layout_weight="2"
             android:layout_margin="10dp"
+            android:switchMinWidth="75dp"
             />
 
         <TextView
-            android:text="@string/rider"
+            android:text="@string/driver"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView"
             tools:textSize="18sp"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:textColor="@color/cast_expanded_controller_background_color" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <EditText
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/login"
+            android:hint="Login" />
+
+        <EditText
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="Password"
+            android:id="@+id/password" />
+
     </LinearLayout>
 
     <Button
@@ -59,7 +81,30 @@
         android:layout_below="@+id/riderOrDriverSwitch"
         android:layout_centerHorizontal="true"
         android:onClick="getStarted"
-        />
+        android:layout_marginBottom="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sign_up_desc"
+            android:text="Do not have an account?"
+            android:textColor="@android:color/holo_orange_dark" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sign_up"
+            android:text=" Sign Up"
+            android:clickable="true"
+            android:onClick="sign_up"
+            android:textColor="@android:color/holo_red_light" />
+
+    </LinearLayout>
 
 
 </LinearLayout>

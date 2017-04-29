@@ -26,9 +26,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="5dp"
         android:id="@+id/acceptRequest"
-        android:onClick="acceptRequest" />
+        android:onClick="acceptRequest"
+        />
 
     <Button
         android:text="Back"
@@ -37,7 +38,9 @@
         android:id="@+id/backButton"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="11dp"
-        android:onClick="back" />
+        android:layout_marginStart="5dp"
+        android:onClick="back"
+        android:color="#66FF0000"
+        android:alpha="0.25"/>
 
 </RelativeLayout>
