@@ -95,7 +95,6 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
             parseACL.setPublicReadAccess(true);
             request.setACL(parseACL);
 
-
             request.saveInBackground(new SaveCallback() {
                 @Override
                 public void done(ParseException e) {
@@ -226,7 +225,7 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
 
         if (driverUsername.equals("")) {
 
-            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 15));
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 12));
             mMap.addMarker(new MarkerOptions().position(new LatLng(location.getLatitude(), location.getLongitude())).title("Your Location"));
 
         }
