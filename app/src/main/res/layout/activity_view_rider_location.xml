@@ -13,6 +13,7 @@
 
     <Button
         android:text="Back"
+        android:drawableLeft="@drawable/backto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/backButton"
@@ -21,7 +22,7 @@
         android:layout_marginStart="5dp"
         android:onClick="back"
         android:color="#66FF0000"
-        android:alpha="0.5"
+        android:alpha="0.8"
         android:layout_marginTop="10dp"/>
 
     <fragment
@@ -34,20 +35,22 @@
         android:layout_alignParentStart="true" />
 
     <Button
-        android:text="Accept Request"
+        android:text=" Accept Request"
+        android:drawableLeft="@drawable/accept_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/acceptRequest"
         android:onClick="acceptRequest"
         android:color="#66FF0000"
-        android:alpha="0.5"
+        android:alpha="0.8"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="10dp"
         android:layout_marginTop="10dp"/>
 
     <Button
-        android:text="finish way"
+        android:text="  finish way"
+        android:drawableLeft="@drawable/finish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/successButton"
@@ -55,7 +58,7 @@
         android:layout_centerHorizontal="true"
         android:onClick="finishWay"
         android:color="#66FF0000"
-        android:alpha="0.5"
+        android:alpha="0.8"
         android:layout_marginBottom="10dp"/>
 
 </RelativeLayout>

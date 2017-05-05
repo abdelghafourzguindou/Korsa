@@ -176,6 +176,7 @@ public class SignIn extends AppCompatActivity implements LoaderCallbacks<Cursor>
                 user.setPassword(password.getText().toString());
                 user.put("riderOrDriver", riderOrDriver);
 
+
                 user.signUpInBackground(new SignUpCallback() {
                     @Override
                     public void done(ParseException e) {

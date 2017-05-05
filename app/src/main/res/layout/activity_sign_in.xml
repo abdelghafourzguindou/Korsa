@@ -9,7 +9,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.project.korsa.korsa.SignIn"
-    android:background="@drawable/backflat">
+    android:background="@drawable/backgroundapp"
+    >
 
     <!-- Login progress -->
     <ProgressBar
@@ -113,8 +114,9 @@
                 style="?android:textAppearanceSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/signin"
                 android:layout_marginTop="16dp"
-                android:text="@string/get_started"
+                android:text="  Get Started"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -126,8 +128,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/sign_up_desc"
-                    android:text="@string/msg_sign_up"
-                    android:textColor="@android:color/holo_orange_dark"
+                    android:text="Do not have an account?  "
+                    android:textColor="@android:color/background_light"
                     android:gravity="center_horizontal|center" />
                 <TextView
                     android:clickable="true"
@@ -136,6 +138,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/register"
+                    android:drawableLeft="@drawable/register"
                     android:text=" Sign Up" />
             </LinearLayout>
 

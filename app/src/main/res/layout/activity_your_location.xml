@@ -22,7 +22,8 @@
     tools:context="com.project.korsa.korsa.YourLocation" />
 
     <Button
-        android:text="Request Korsa"
+        android:text=" Request Korsa"
+        android:drawableLeft="@drawable/location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/requestKorsa"
@@ -31,7 +32,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:color="#66FF0000"
-        android:alpha="0.5"
+        android:alpha="0.8"
         android:layout_margin="10dp"/>
 
     <TextView
