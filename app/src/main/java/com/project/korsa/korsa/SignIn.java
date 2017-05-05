@@ -6,6 +6,7 @@ import android.annotation.TargetApi;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -55,129 +56,6 @@ import static android.Manifest.permission.READ_CONTACTS;
  */
 public class SignIn extends AppCompatActivity implements LoaderCallbacks<Cursor> {
 
-    String riderOrDriver;
-    Switch riderOrDriverSwitch;
-
-    public void getStarted(View view) {
-        attemptLogin();
-        riderOrDriver = "rider";
-
-        if (riderOrDriverSwitch.isChecked()) {
-
-            riderOrDriver = "driver";
-
-        }
-
-        ParseUser.getCurrentUser().put("riderOrDriver", riderOrDriver);
-
-        ParseUser.getCurrentUser().saveInBackground(new SaveCallback() {
-            @Override
-            public void done(ParseException e) {
-
-                if (e == null) {
-
-                    redirectUser();
-
-                }
-            }
-        });
-    }
-
-    public void redirectUser() {
-
-        if (ParseUser.getCurrentUser().get("riderOrDriver").equals("rider")) {
-
-            Intent i = new Intent(getApplicationContext(), YourLocation.class);
-            startActivity(i);
-
-        } else {
-
-            Intent i = new Intent(getApplicationContext(), ViewRequests.class);
-            startActivity(i);
-        }
-    }
-
-    public void sign_up() {
-        final Dialog dialog = new Dialog(this);
-        dialog.setContentView(R.layout.sign_up);
-        dialog.setTitle("Sign Up in Korsa");
-
-        final EditText username   = (EditText) dialog.findViewById(R.id.sign_up_username);
-        final EditText email      = (EditText) dialog.findViewById(R.id.sign_up_email);
-        final EditText password   = (EditText) dialog.findViewById(R.id.sign_up_password);
-
-        Button cancelDialogButton = (Button) dialog.findViewById(R.id.cancel);
-        cancelDialogButton.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss();
-            }
-        });
-
-        Button signUpBtn = (Button) dialog.findViewById(R.id.sign_up_button);
-        signUpBtn.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                /*ParseUser user = new ParseUser();
-
-                user.setUsername(username.getText().toString());
-                user.setEmail(email.getText().toString());
-                user.setPassword(password.getText().toString());
-                user.put("riderOrDriver", riderOrDriver);
-
-                user.signUpInBackground(new SignUpCallback() {
-                    @Override
-                    public void done(ParseException e) {
-                        if(e == null) {
-                            //redirectUser();
-                            dialog.dismiss();
-                            Toast.makeText(SignIn.this, "Sign up with success", Toast.LENGTH_SHORT).show();
-                            finish();
-                        } else {
-                            Toast.makeText(SignIn.this, "Sign up filed", Toast.LENGTH_SHORT).show();
-                            if(e.getCode() == 202) {
-                                Toast.makeText(SignIn.this, "Username already taken", Toast.LENGTH_SHORT).show();
-                                username.setText("");
-                                email.setText("");
-                                password.setText("");
-                            }
-                        }
-                    }
-                });*/
-                ParseUser.getCurrentUser().put("username", username.getText().toString());
-                ParseUser.getCurrentUser().put("password", password.getText().toString());
-                ParseUser.getCurrentUser().put("email", email.getText().toString());
-                ParseUser.getCurrentUser().put("riderOrDriver", riderOrDriver);
-
-
-                ParseUser.getCurrentUser().saveInBackground(new SaveCallback() {
-                    @Override
-                    public void done(ParseException e) {
-
-                        if(e == null) {
-                            //redirectUser();
-                            dialog.dismiss();
-                            Toast.makeText(SignIn.this, "Sign up with success", Toast.LENGTH_SHORT).show();
-                            finish();
-                        } else {
-                            Toast.makeText(SignIn.this, "Sign up filed", Toast.LENGTH_SHORT).show();
-                            if(e.getCode() == 202) {
-                                Toast.makeText(SignIn.this, "Username already taken", Toast.LENGTH_SHORT).show();
-                                username.setText("");
-                                email.setText("");
-                                password.setText("");
-                            }
-                        }
-                    }
-                });
-            }
-        });
-
-        dialog.show();
-    }
-
-
     /**
      * Id to identity READ_CONTACTS permission request.
      */
@@ -200,6 +78,147 @@ public class SignIn extends AppCompatActivity implements LoaderCallbacks<Cursor>
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
+    String riderOrDriver;
+    Switch riderOrDriverSwitch;
+
+    public void getStarted(View view) {
+        //attemptLogin();
+        /*riderOrDriver = "rider";
+        if (riderOrDriverSwitch.isChecked()) {
+            riderOrDriver = "driver";
+        }
+        ParseUser.getCurrentUser().put("riderOrDriver", riderOrDriver);
+        ParseUser.getCurrentUser().saveInBackground(new SaveCallback() {
+            @Override
+            public void done(ParseException e) {
+                if (e == null) {
+                    sign_in(mEmailView.getText().toString(), mPasswordView.getText().toString());
+                    //redirectUser();
+                }
+            }
+        });*/
+
+        sign_in(mEmailView.getText().toString(), mPasswordView.getText().toString());
+    }
+
+    public void redirectUser() {
+
+        if (ParseUser.getCurrentUser().get("riderOrDriver").equals("rider")) {
+
+            Intent i = new Intent(getApplicationContext(), YourLocation.class);
+            startActivity(i);
+
+        } else {
+
+            Intent i = new Intent(getApplicationContext(), ViewRequests.class);
+            startActivity(i);
+        }
+    }
+
+    public void sign_in(String email, String password) {
+
+        //System.out.println("EMAIL : " + email);
+        //System.out.println("PASSW : " + password);
+
+        ParseUser.logInInBackground(email, password, new LogInCallback() {
+            @Override
+            public void done(ParseUser user, ParseException e) {
+                if (user != null) {
+                    //attemptLogin();
+                    if(user.get("riderOrDriver").equals(riderOrDriver)) redirectUser();
+                    else Toast.makeText(SignIn.this, "Your are not a " + riderOrDriver, Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(SignIn.this, "Sign in failed", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
+
+    public void sign_up() {
+
+        if (riderOrDriverSwitch.isChecked()) {
+            riderOrDriver = "driver";
+        }
+
+        final Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.sign_up);
+        dialog.setTitle("Sign Up in Korsa");
+
+        final EditText username   = (EditText) dialog.findViewById(R.id.sign_up_username);
+        final EditText email      = (EditText) dialog.findViewById(R.id.sign_up_email);
+        final EditText password   = (EditText) dialog.findViewById(R.id.sign_up_password);
+
+        Button cancelDialogButton = (Button) dialog.findViewById(R.id.cancel);
+        cancelDialogButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        Button signUpBtn = (Button) dialog.findViewById(R.id.sign_up_button);
+        signUpBtn.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                ParseUser user = new ParseUser();
+
+                user.setUsername(username.getText().toString());
+                user.setEmail(email.getText().toString());
+                user.setPassword(password.getText().toString());
+                user.put("riderOrDriver", riderOrDriver);
+
+                user.signUpInBackground(new SignUpCallback() {
+                    @Override
+                    public void done(ParseException e) {
+                        if(e == null) {
+                            //attemptLogin();
+                            redirectUser();
+                            dialog.dismiss();
+                            Toast.makeText(SignIn.this, "Sign up with success", Toast.LENGTH_SHORT).show();
+                            //finish();
+                        } else {
+                            Toast.makeText(SignIn.this, "Sign up filed", Toast.LENGTH_SHORT).show();
+                            if(e.getCode() == 202) {
+                                Toast.makeText(SignIn.this, "Username already taken", Toast.LENGTH_SHORT).show();
+                                username.setText("");
+                                email.setText("");
+                                password.setText("");
+                            }
+                        }
+                    }
+                });
+                /*
+                ParseUser.getCurrentUser().put("username", username.getText().toString());
+                ParseUser.getCurrentUser().put("password", password.getText().toString());
+                ParseUser.getCurrentUser().put("email", email.getText().toString());
+                ParseUser.getCurrentUser().put("riderOrDriver", riderOrDriver);
+
+                ParseUser.getCurrentUser().saveInBackground(new SaveCallback() {
+                    @Override
+                    public void done(ParseException e) {
+
+                        if(e == null) {
+                            //redirectUser();
+                            dialog.dismiss();
+                            Toast.makeText(SignIn.this, "Sign up with success", Toast.LENGTH_SHORT).show();
+                           //finish();
+                        } else {
+                            Toast.makeText(SignIn.this, "Sign up filed", Toast.LENGTH_SHORT).show();
+                            if(e.getCode() == 202) {
+                                Toast.makeText(SignIn.this, "Username already taken", Toast.LENGTH_SHORT).show();
+                                username.setText("");
+                                email.setText("");
+                                password.setText("");
+                            }
+                        }
+                    }
+                });*/
+            }
+        });
+
+        dialog.show();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -208,12 +227,12 @@ public class SignIn extends AppCompatActivity implements LoaderCallbacks<Cursor>
         // Set up the login form.
 
         //Redirect User
-        riderOrDriver = "rider";
+
         riderOrDriverSwitch = (Switch) findViewById(R.id.riderOrDriverSwitch);
         ParseAnalytics.trackAppOpenedInBackground(getIntent());
-        //getSupportActionBar().hide();
-        if (ParseUser.getCurrentUser() == null) {
 
+        //getSupportActionBar().hide();
+        /*if (ParseUser.getCurrentUser() == null) {
             ParseAnonymousUtils.logIn(new LogInCallback() {
                 @Override
                 public void done(ParseUser user, ParseException e) {
@@ -225,6 +244,18 @@ public class SignIn extends AppCompatActivity implements LoaderCallbacks<Cursor>
                 }
             });
         }
+        riderOrDriver = "rider";
+        ParseUser.getCurrentUser().put("riderOrDriver", riderOrDriver);
+        ParseUser.getCurrentUser().saveInBackground(new SaveCallback() {
+            @Override
+            public void done(ParseException e) {
+                if (e == null) {
+                    Toast.makeText(SignIn.this, "Welcome in korsa", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });*/
+
+        riderOrDriver = "rider";
 
         TextView signUp = (TextView) findViewById(R.id.register);
         signUp.setOnClickListener(new OnClickListener() {
@@ -251,6 +282,19 @@ public class SignIn extends AppCompatActivity implements LoaderCallbacks<Cursor>
 
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
+
+        Button getStarted = (Button) findViewById(R.id.email_sign_in_button);
+        getStarted.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                String mail = mEmailView.getText().toString();
+                String pass = mPasswordView.getText().toString();
+
+                sign_in(mail, pass);
+            }
+        });
     }
 
     private void populateAutoComplete() {

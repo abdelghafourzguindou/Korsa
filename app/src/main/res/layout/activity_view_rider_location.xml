@@ -29,6 +29,8 @@
         android:layout_marginBottom="5dp"
         android:id="@+id/acceptRequest"
         android:onClick="acceptRequest"
+        android:color="#66FF0000"
+        android:alpha="0.5"
         />
 
     <Button
@@ -41,6 +43,6 @@
         android:layout_marginStart="5dp"
         android:onClick="back"
         android:color="#66FF0000"
-        android:alpha="0.25"/>
+        android:alpha="0.5"/>
 
 </RelativeLayout>
