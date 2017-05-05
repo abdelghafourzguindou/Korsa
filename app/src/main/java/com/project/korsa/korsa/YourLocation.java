@@ -102,7 +102,7 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
                     if (e == null) {
 
                         infoTextView.setText("Finding Korsa driver...");
-                        requestKorsaButton.setText("Cancel Korsa");
+                        requestKorsaButton.setText(" Cancel Korsa");
                         requestActive = true;
                         setLocation(location);
 
@@ -113,7 +113,7 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
         } else {
 
             infoTextView.setText("Korsa Cancelled.");
-            requestKorsaButton.setText("Request Korsa");
+            requestKorsaButton.setText(" Request Korsa");
             requestActive = false;
 
             ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("Requests");
@@ -203,7 +203,7 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
 
                                 requestActive = true;
                                 infoTextView.setText("Finding Korsa driver...");
-                                requestKorsaButton.setText("Cancel Korsa");
+                                requestKorsaButton.setText(" Cancel Korsa");
 
                                 if (object.get("driverUsername") != null) {
 
@@ -226,7 +226,7 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
 
         if (driverUsername.equals("")) {
 
-            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 12));
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 10));
             mMap.addMarker(new MarkerOptions().position(new LatLng(location.getLatitude(), location.getLongitude())).title("Your Location"));
 
         }
