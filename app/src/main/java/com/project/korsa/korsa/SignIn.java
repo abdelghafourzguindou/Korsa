@@ -115,14 +115,20 @@ public class SignIn extends AppCompatActivity implements LoaderCallbacks<Cursor>
         }
     }
 
+    public void switchChecked(String str) {
+        if (riderOrDriverSwitch.isChecked()) {
+            if(str.equals("driver")) riderOrDriver = "rider";
+            else riderOrDriver = "driver";
+        }
+        else riderOrDriver = "rider";
+    }
+
     public void sign_in(String email, String password) {
 
         //System.out.println("EMAIL : " + email);
         //System.out.println("PASSW : " + password);
 
-        if (riderOrDriverSwitch.isChecked()) {
-            riderOrDriver = "driver";
-        }
+        switchChecked(riderOrDriver);
 
         ParseUser.logInInBackground(email, password, new LogInCallback() {
             @Override
@@ -140,9 +146,7 @@ public class SignIn extends AppCompatActivity implements LoaderCallbacks<Cursor>
 
     public void sign_up() {
 
-        if (riderOrDriverSwitch.isChecked()) {
-            riderOrDriver = "driver";
-        }
+        switchChecked(riderOrDriver);
 
         final Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.sign_up);
