@@ -113,6 +113,7 @@ public class SignIn extends AppCompatActivity implements LoaderCallbacks<Cursor>
             Intent i = new Intent(getApplicationContext(), ViewRequests.class);
             startActivity(i);
         }
+        showProgress(true);
     }
 
     public void switchChecked(String str) {

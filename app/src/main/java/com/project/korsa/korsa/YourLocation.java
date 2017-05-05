@@ -270,7 +270,7 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
 
                     ArrayList<Marker> markers = new ArrayList<Marker>();
 
-                    markers.add(mMap.addMarker(new MarkerOptions().position(new LatLng(driverLocation.getLatitude(), driverLocation.getLongitude())).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)).title("Driver Location")));
+                    markers.add(mMap.addMarker(new MarkerOptions().position(new LatLng(driverLocation.getLatitude(), driverLocation.getLongitude())).icon(BitmapDescriptorFactory.fromResource(R.drawable.taxi)).title("Driver Location")));
                     markers.add(mMap.addMarker(new MarkerOptions().position(new LatLng(location.getLatitude(), location.getLongitude())).title("Your Location")));
 
                     for (Marker marker : markers) {

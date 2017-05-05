@@ -134,7 +134,7 @@ public class ViewRiderLocation extends FragmentActivity implements OnMapReadyCal
 
                 ArrayList<Marker> markers = new ArrayList<Marker>();
 
-                markers.add(mMap.addMarker(new MarkerOptions().position(new LatLng(i.getDoubleExtra("latitude", 0), i.getDoubleExtra("longitude", 0))).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)).title("Rider Location")));
+                markers.add(mMap.addMarker(new MarkerOptions().position(new LatLng(i.getDoubleExtra("latitude", 0), i.getDoubleExtra("longitude", 0))).icon(BitmapDescriptorFactory.fromResource(R.drawable.taxi)).title("Rider Location")));//.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)).title("Rider Location")));
                 markers.add(mMap.addMarker(new MarkerOptions().position(new LatLng(i.getDoubleExtra("userLatitude", 0), i.getDoubleExtra("userLongitude", 0))).title("Your Location")));
 
                 for (Marker marker : markers) {
