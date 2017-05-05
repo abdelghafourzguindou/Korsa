@@ -141,7 +141,6 @@
                     android:drawableLeft="@drawable/register"
                     android:text=" Sign Up" />
             </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
 
