@@ -68,6 +68,33 @@ public class ViewRiderLocation extends FragmentActivity implements OnMapReadyCal
         });
     }
 
+    public void finishWay(View view) {
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Requests");
+        query.whereEqualTo("requesterUsername", i.getStringExtra("username"));
+        query.findInBackground(new FindCallback<ParseObject>() {
+            @Override
+            public void done(List<ParseObject> objects, ParseException e) {
+                if (e == null) {
+                    if (objects.size() > 0) {
+                        for (ParseObject object : objects) {
+                            //object.put("driverUsername", "");
+                            object.deleteInBackground();
+                            object.saveInBackground(new SaveCallback() {
+                                @Override
+                                public void done(ParseException e) {
+                                    if (e == null) {
+                                        Intent i = new Intent(getApplicationContext(), ViewRequests.class);
+                                        startActivity(i);
+                                    }
+                                }
+                            });
+                        }
+                    }
+                }
+            }
+        });
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

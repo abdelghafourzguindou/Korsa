@@ -120,6 +120,10 @@ public class SignIn extends AppCompatActivity implements LoaderCallbacks<Cursor>
         //System.out.println("EMAIL : " + email);
         //System.out.println("PASSW : " + password);
 
+        if (riderOrDriverSwitch.isChecked()) {
+            riderOrDriver = "driver";
+        }
+
         ParseUser.logInInBackground(email, password, new LogInCallback() {
             @Override
             public void done(ParseUser user, ParseException e) {
@@ -128,7 +132,7 @@ public class SignIn extends AppCompatActivity implements LoaderCallbacks<Cursor>
                     if(user.get("riderOrDriver").equals(riderOrDriver)) redirectUser();
                     else Toast.makeText(SignIn.this, "Your are not a " + riderOrDriver, Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(SignIn.this, "Sign in failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignIn.this, "Sign in failed : incorrect Username or Password", Toast.LENGTH_SHORT).show();
                 }
             }
         });

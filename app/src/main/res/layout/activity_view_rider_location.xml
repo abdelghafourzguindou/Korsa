@@ -11,28 +11,6 @@
     tools:context="com.project.korsa.korsa.MainActivity"
     android:padding="0dp">
 
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:map="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/map"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.project.korsa.korsa.ViewRiderLocation" />
-
-    <Button
-        android:text="Accept Request"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="5dp"
-        android:id="@+id/acceptRequest"
-        android:onClick="acceptRequest"
-        android:color="#66FF0000"
-        android:alpha="0.5"
-        />
-
     <Button
         android:text="Back"
         android:layout_width="wrap_content"
@@ -43,6 +21,41 @@
         android:layout_marginStart="5dp"
         android:onClick="back"
         android:color="#66FF0000"
-        android:alpha="0.5"/>
+        android:alpha="0.5"
+        android:layout_marginTop="10dp"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.project.korsa.korsa.ViewRiderLocation"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Accept Request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/acceptRequest"
+        android:onClick="acceptRequest"
+        android:color="#66FF0000"
+        android:alpha="0.5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:text="finish way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/successButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="finishWay"
+        android:color="#66FF0000"
+        android:alpha="0.5"
+        android:layout_marginBottom="10dp"/>
 
 </RelativeLayout>

@@ -163,6 +163,7 @@ public class YourLocation extends FragmentActivity implements OnMapReadyCallback
 
         notification = new NotificationCompat.Builder(this);
         notification.setAutoCancel(true);
+
     }
 
     private void setLocation(Location location) {
